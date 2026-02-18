@@ -120,6 +120,13 @@ if(NINJAFOAM)
                     foamGriddedInitialization.cpp)
 endif(NINJAFOAM)
 
+if(CUDA_SUPPORT)
+    set(NINJA_SOURCES ${NINJA_SOURCES}
+                      ninja_gpu.cu
+                      ninja_gpu_wrapper.cpp)
+    set_source_files_properties(ninja_gpu.cu PROPERTIES LANGUAGE CUDA)
+endif(CUDA_SUPPORT)
+
 if(WITH_NOMADS_SUPPORT)
     set(NINJA_SOURCES ${NINJA_SOURCES}
                       nomads_wx_init.cpp
@@ -135,6 +142,17 @@ set(LINK_LIBS ${NETCDF_LIBRARIES_C}
               ${GDAL_LIBRARY} 
               ${CURL_LIBRARIES}
               ${Boost_LIBRARIES})
+
+if(NOT WIN32)
+    find_library(SHP_LIBRARY NAMES shp libshp PATHS /usr/lib/x86_64-linux-gnu)
+    if(SHP_LIBRARY)
+        set(LINK_LIBS ${LINK_LIBS} ${SHP_LIBRARY})
+    endif()
+endif()
+
+if(CUDA_SUPPORT)
+    set(LINK_LIBS ${LINK_LIBS} CUDA::cudart)
+endif(CUDA_SUPPORT)
 
 
 include_directories(${NINJA_INCLUDES})

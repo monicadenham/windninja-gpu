@@ -96,6 +96,10 @@
 #include "farsiteAtm.h"
 #include "OutputWriter.h"
 
+#ifdef NINJA_CUDA_ENABLED
+#include "ninja_gpu_wrapper.h"
+#endif
+
 #ifndef Q_MOC_RUN
 #include <boost/shared_ptr.hpp>
 #include "boost/date_time/local_time/local_time.hpp"
@@ -424,6 +428,12 @@ private:
     void get_rootname(const char *NAME,char *shortname);
     bool solve(double *SK, double *RHS, double *PHI, int *row_ptr,
                int *col_ind, int NUMNP, int MAXITS, int print_iters, double stop_tol);
+
+#ifdef NINJA_CUDA_ENABLED
+    bool solveGPU(double *SK, double *RHS, double *PHI, int *row_ptr,
+                  int *col_ind, int NUMNP, int MAXITS, int print_iters, double stop_tol);
+    bool gpuAvailable();
+#endif
 
     /*-----------------------------------------------------------------------------
      * alternative solvers                                                           

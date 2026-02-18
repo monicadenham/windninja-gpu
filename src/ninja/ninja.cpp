@@ -444,12 +444,24 @@ do
 		#endif
 
 		//solver
+		//Try GPU solver first if CUDA is enabled, otherwise use CPU
 
-		//if the CG solver diverges, try the minres solver
-
-		if(solve(SK, RHS, PHI, row_ptr, col_ind, mesh.NUMNP, MAXITS, print_iters, stop_tol)==false)
-		    if(solveMinres(SK, RHS, PHI, row_ptr, col_ind, mesh.NUMNP, MAXITS, print_iters, stop_tol)==false)
-			throw std::runtime_error("Solver returned false.");
+		#ifdef NINJA_CUDA_ENABLED
+			if(gpuAvailable()) {
+				if(solveGPU(SK, RHS, PHI, row_ptr, col_ind, mesh.NUMNP, MAXITS, print_iters, stop_tol)==false)
+					if(solveMinres(SK, RHS, PHI, row_ptr, col_ind, mesh.NUMNP, MAXITS, print_iters, stop_tol)==false)
+						throw std::runtime_error("Solver returned false.");
+			} else {
+				if(solve(SK, RHS, PHI, row_ptr, col_ind, mesh.NUMNP, MAXITS, print_iters, stop_tol)==false)
+					if(solveMinres(SK, RHS, PHI, row_ptr, col_ind, mesh.NUMNP, MAXITS, print_iters, stop_tol)==false)
+						throw std::runtime_error("Solver returned false.");
+			}
+		#else
+			//if the CG solver diverges, try the minres solver
+			if(solve(SK, RHS, PHI, row_ptr, col_ind, mesh.NUMNP, MAXITS, print_iters, stop_tol)==false)
+				if(solveMinres(SK, RHS, PHI, row_ptr, col_ind, mesh.NUMNP, MAXITS, print_iters, stop_tol)==false)
+					throw std::runtime_error("Solver returned false.");
+		#endif
 
 		#ifdef _OPENMP
 			endSolve = omp_get_wtime();
@@ -653,6 +665,54 @@ double ninja::getSmallestRadiusOfInfluence()
 
 	return smallest;
 }
+
+#ifdef NINJA_CUDA_ENABLED
+
+bool ninja::gpuAvailable()
+{
+    NinjaGPUSolver gpuSolver;
+    return gpuSolver.isAvailable();
+}
+
+bool ninja::solveGPU(double *A, double *b, double *x, int *row_ptr, int *col_ind, int NUMNP, int max_iter, int print_iters, double tol)
+{
+    NinjaGPUSolver gpuSolver;
+    
+    if (!gpuSolver.isAvailable()) {
+        input.Com->ninjaCom(ninjaComClass::ninjaWarning, "GPU not available, falling back to CPU solver.");
+        return solve(A, b, x, row_ptr, col_ind, NUMNP, max_iter, print_iters, tol);
+    }
+    
+    int nnz = row_ptr[NUMNP];
+    
+    if (!gpuSolver.initialize(NUMNP, nnz)) {
+        input.Com->ninjaCom(ninjaComClass::ninjaWarning, "GPU initialization failed, falling back to CPU solver.");
+        return solve(A, b, x, row_ptr, col_ind, NUMNP, max_iter, print_iters, tol);
+    }
+    
+    gpuSolver.setMatrix(A, row_ptr, col_ind);
+    gpuSolver.setVectors(x, b);
+    
+    double final_residual = 0.0;
+    int iterations = 0;
+    
+    input.Com->ninjaCom(ninjaComClass::ninjaNone, "Running GPU-accelerated CG solver...");
+    
+    bool success = gpuSolver.solve(max_iter, tol, print_iters, &final_residual, &iterations);
+    
+    if (success) {
+        gpuSolver.getSolution(x);
+        input.Com->ninjaCom(ninjaComClass::ninjaNone, "GPU solver converged in %d iterations (residual: %e)", iterations, final_residual);
+    } else {
+        input.Com->ninjaCom(ninjaComClass::ninjaWarning, "GPU solver did not converge, trying MINRES...");
+    }
+    
+    gpuSolver.cleanup();
+    
+    return success;
+}
+
+#endif
 
 
 //  CG solver
