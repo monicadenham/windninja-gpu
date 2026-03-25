@@ -59,3 +59,29 @@ doxy.tag
 
 /out/build/x64-Release
 /out/install/x64-Release
+
+# WindNinja output files
+# ======================
+# Shapefile outputs
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+
+# ASCII raster outputs
+*.asc
+
+# GeoTIFF outputs
+*.tif
+*.tiff
+*.aux.xml
+
+# Google Earth outputs
+*.kmz
+*.kml
+
+# Output directories (ignore contents, not folders)
+build/output/*
+build/input/*
+dem_*/

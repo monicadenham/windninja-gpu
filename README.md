@@ -1,9 +1,89 @@
 WindNinja
 =========
-[![example workflow](https://github.com/firelab/windninja/actions/workflows/testing.yml/badge.svg)](https://github.com/firelab/windninja/actions)
+<!---[![example workflow](https://github.com/firelab/windninja/actions/workflows/testing.yml/badge.svg)](https://github.com/firelab/windninja/actions)--->
 [![DOI](https://zenodo.org/badge/21244/firelab/windninja.svg)](https://zenodo.org/badge/latestdoi/21244/firelab/windninja)
 
-WindNinja is a diagnostic wind model developed for use in wildland fire modeling.
+Uso Rápido (CLI)
+================
+
+## Estructura de Carpetas
+
+```
+windninja/
+├── build/          # Todo lo necesario para ejecutar
+│   ├── input/      # DEM de entrada (modelo digital de elevación)
+│   │   ├── dem.asc
+│   │   └── dem.prj
+│   ├── output/     # Resultados de la simulación
+│   ├── config.cfg  # Configuración de la simulación
+│   └── src/cli/WindNinja_cli  # Ejecutable
+└── src/           # Código fuente
+```
+
+## Configuración (config.cfg)
+
+Los parámetros principales están en `build/config.cfg`:
+
+```ini
+# ===== VIENTO =====
+# Velocidad del viento
+input_speed = 30
+input_speed_units = kph          # opciones: kph, mph, mps, kts
+
+# Dirección del viento (desde dónde viene)
+# 0 = Norte, 90 = Este, 180 = Sur, 270 = Oeste, 315 = Noroeste
+input_direction = 315
+
+# ===== VEGETACIÓN =====
+# Tipo de cobertura de suelo
+vegetation = trees               # opciones: grass, brush, trees
+
+# ===== RESOLUCIÓN =====
+mesh_resolution = 30             # 30m, 100m, etc.
+units_mesh_resolution = m
+
+# ===== SALIDAS =====
+write_ascii_output = 1           # 1 = generar .asc (velocidad, dirección, nubes)
+write_goog_output = 0            # 1 = generar .kmz (Google Earth)
+write_shapefile_output = 0       # 1 = generar .shp
+
+# Carpeta de salida
+output_path = ./output/
+```
+
+> **Valores por defecto para la Patagonia (Noroeste):**
+> - Velocidad: 30 kph
+> - Dirección: 315° (desde el noroeste)
+> - Vegetación: trees (árboles)
+
+## Ejecutar la Simulación
+
+```bash
+# 1. Crear carpeta output (si no existe)
+mkdir -p build/output
+
+# 2. Ejecutar el simulador
+cd build
+./src/cli/WindNinja_cli --config_file config.cfg
+```
+
+## Archivos de Salida
+
+Los resultados se generan en `build/output/`:
+
+| Archivo | Descripción |
+|---------|-------------|
+| `*_vel.asc` | Velocidad del viento |
+| `*_ang.asc` | Dirección del viento |
+| `*_cld.asc` | Cobertura de nubes |
+| `*.shp` | Shapefile con velocidad y dirección |
+| `*.kmz` | Visualización en Google Earth |
+
+---
+
+
+
+# WindNinja is a diagnostic wind model developed for use in wildland fire modeling.
 
 Web:
 https://ninjastorm.firelab.org/windninja/
