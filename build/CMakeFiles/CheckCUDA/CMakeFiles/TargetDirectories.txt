@@ -1,2 +1,0 @@
-/home/mdenham/WindNinjaParalelo/windninja/build/CMakeFiles/CheckCUDA/CMakeFiles/edit_cache.dir
-/home/mdenham/WindNinjaParalelo/windninja/build/CMakeFiles/CheckCUDA/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,687 @@
+Start testing: Mar 25 12:40 -03
+----------------------------------------------------------
+1/60 Testing: test_contain_point
+1/60 Test: test_contain_point
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=contain/points"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_contain_point" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"test_contain_point" end time: Mar 25 12:40 -03
+"test_contain_point" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/60 Testing: test_contain_polygon
+2/60 Test: test_contain_polygon
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=contain/polygon"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_contain_polygon" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"test_contain_polygon" end time: Mar 25 12:40 -03
+"test_contain_polygon" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/60 Testing: test_contain_polygon2
+3/60 Test: test_contain_polygon2
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=contain/polygon2"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_contain_polygon2" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"test_contain_polygon2" end time: Mar 25 12:40 -03
+"test_contain_polygon2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/60 Testing: test_grid_interp_order
+4/60 Test: test_grid_interp_order
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=grid_interp/order"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_grid_interp_order" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"test_grid_interp_order" end time: Mar 25 12:40 -03
+"test_grid_interp_order" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/60 Testing: test_array2d_constructor
+5/60 Test: test_array2d_constructor
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=array2d/constructor"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_array2d_constructor" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"test_array2d_constructor" end time: Mar 25 12:40 -03
+"test_array2d_constructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/60 Testing: test_timezone_boise
+6/60 Test: test_timezone_boise
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=timezones/boise"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_timezone_boise" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"test_timezone_boise" end time: Mar 25 12:40 -03
+"test_timezone_boise" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/60 Testing: test_init_gdal
+7/60 Test: test_init_gdal
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=init/gdal"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_init_gdal" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"test_init_gdal" end time: Mar 25 12:40 -03
+"test_init_gdal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/60 Testing: test_buffer_grid_init
+8/60 Test: test_buffer_grid_init
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=buffer_grid/init_and_set"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_buffer_grid_init" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"test_buffer_grid_init" end time: Mar 25 12:40 -03
+"test_buffer_grid_init" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/60 Testing: test_gdal_util_center
+9/60 Test: test_gdal_util_center
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=gdal_util/center"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_gdal_util_center" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"test_gdal_util_center" end time: Mar 25 12:40 -03
+"test_gdal_util_center" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/60 Testing: test_utm_boise
+11/60 Test: test_utm_boise
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utm/boise"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_utm_boise" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"test_utm_boise" end time: Mar 25 12:40 -03
+"test_utm_boise" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/60 Testing: test_utm_adelaide
+12/60 Test: test_utm_adelaide
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utm/adelaide"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"test_utm_adelaide" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"test_utm_adelaide" end time: Mar 25 12:40 -03
+"test_utm_adelaide" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/60 Testing: utc_create_1
+34/60 Test: utc_create_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/create_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_create_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_create_1" end time: Mar 25 12:40 -03
+"utc_create_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/60 Testing: utc_add_hours_1
+35/60 Test: utc_add_hours_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/add_hours_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_add_hours_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_add_hours_1" end time: Mar 25 12:40 -03
+"utc_add_hours_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/60 Testing: utc_add_hours_2
+36/60 Test: utc_add_hours_2
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/add_hours_2"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_add_hours_2" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_add_hours_2" end time: Mar 25 12:40 -03
+"utc_add_hours_2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/60 Testing: utc_add_hours_3
+37/60 Test: utc_add_hours_3
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/add_hours_3"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_add_hours_3" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_add_hours_3" end time: Mar 25 12:40 -03
+"utc_add_hours_3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/60 Testing: utc_add_hours_4
+38/60 Test: utc_add_hours_4
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/add_hours_4"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_add_hours_4" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_add_hours_4" end time: Mar 25 12:40 -03
+"utc_add_hours_4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/60 Testing: utc_add_hours_5
+39/60 Test: utc_add_hours_5
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/add_hours_5"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_add_hours_5" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_add_hours_5" end time: Mar 25 12:40 -03
+"utc_add_hours_5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/60 Testing: utc_add_hours_6
+40/60 Test: utc_add_hours_6
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/add_hours_6"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_add_hours_6" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_add_hours_6" end time: Mar 25 12:40 -03
+"utc_add_hours_6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/60 Testing: utc_add_hours_7
+41/60 Test: utc_add_hours_7
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/add_hours_7"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_add_hours_7" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_add_hours_7" end time: Mar 25 12:40 -03
+"utc_add_hours_7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/60 Testing: utc_add_hours_8
+42/60 Test: utc_add_hours_8
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/add_hours_8"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_add_hours_8" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_add_hours_8" end time: Mar 25 12:40 -03
+"utc_add_hours_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/60 Testing: utc_add_hours_9
+43/60 Test: utc_add_hours_9
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/add_hours_9"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_add_hours_9" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_add_hours_9" end time: Mar 25 12:40 -03
+"utc_add_hours_9" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/60 Testing: utc_now_1
+44/60 Test: utc_now_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/now_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_now_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   1.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_now_1" end time: Mar 25 12:40 -03
+"utc_now_1" time elapsed: 00:00:01
+----------------------------------------------------------
+
+45/60 Testing: utc_compare_1
+45/60 Test: utc_compare_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/compare_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_compare_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   1.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_compare_1" end time: Mar 25 12:40 -03
+"utc_compare_1" time elapsed: 00:00:01
+----------------------------------------------------------
+
+46/60 Testing: utc_compare_2
+46/60 Test: utc_compare_2
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/compare_2"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_compare_2" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   1.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_compare_2" end time: Mar 25 12:40 -03
+"utc_compare_2" time elapsed: 00:00:01
+----------------------------------------------------------
+
+47/60 Testing: utc_compare_3
+47/60 Test: utc_compare_3
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/compare_3"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_compare_3" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"utc_compare_3" end time: Mar 25 12:40 -03
+"utc_compare_3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/60 Testing: utc_timet_1
+48/60 Test: utc_timet_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/from_timet_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_timet_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_timet_1" end time: Mar 25 12:40 -03
+"utc_timet_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/60 Testing: utc_iso_1
+49/60 Test: utc_iso_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/from_iso_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_iso_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"utc_iso_1" end time: Mar 25 12:40 -03
+"utc_iso_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/60 Testing: utc_iso_invalid_1
+50/60 Test: utc_iso_invalid_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/from_iso_invalid_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_iso_invalid_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_iso_invalid_1" end time: Mar 25 12:40 -03
+"utc_iso_invalid_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/60 Testing: utc_strftime_1
+51/60 Test: utc_strftime_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/strftime_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_strftime_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_strftime_1" end time: Mar 25 12:40 -03
+"utc_strftime_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/60 Testing: utc_copy_1
+52/60 Test: utc_copy_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/copy_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_copy_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_copy_1" end time: Mar 25 12:40 -03
+"utc_copy_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/60 Testing: utc_copy_2
+53/60 Test: utc_copy_2
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=utc/copy_2"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"utc_copy_2" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"utc_copy_2" end time: Mar 25 12:40 -03
+"utc_copy_2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/60 Testing: form_name_1
+54/60 Test: form_name_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=simplenomadsclient/form_name_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"form_name_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"form_name_1" end time: Mar 25 12:40 -03
+"form_name_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/60 Testing: rmtree_1
+57/60 Test: rmtree_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=rmtree/rmtree_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"rmtree_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"rmtree_1" end time: Mar 25 12:40 -03
+"rmtree_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/60 Testing: rmtree_sym_1
+58/60 Test: rmtree_sym_1
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=rmtree/rmtree_sym_1"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"rmtree_sym_1" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"rmtree_sym_1" end time: Mar 25 12:40 -03
+"rmtree_sym_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/60 Testing: rmtree_sym_2
+59/60 Test: rmtree_sym_2
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=rmtree/rmtree_sym_2"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"rmtree_sym_2" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"rmtree_sym_2" end time: Mar 25 12:40 -03
+"rmtree_sym_2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/60 Testing: rmtree_sym_3
+60/60 Test: rmtree_sym_3
+Command: "/home/mdenham/WindNinjaParalelo/windninja/build/autotest/test_main" "--run_test=rmtree/rmtree_sym_3"
+Directory: /home/mdenham/WindNinjaParalelo/windninja/build/autotest
+"rmtree_sym_3" start time: Mar 25 12:40 -03
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"rmtree_sym_3" end time: Mar 25 12:40 -03
+"rmtree_sym_3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 25 12:40 -03

@@ -14,7 +14,7 @@ CUDA_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_DATE_TIME_DYN_LINK -DBOOST_PROGRAM_OPT
 
 CUDA_INCLUDES = -I/home/mdenham/WindNinjaParalelo/windninja/build -I/usr/include/gdal -I/home/mdenham/WindNinjaParalelo/windninja/src -I/home/mdenham/WindNinjaParalelo/windninja/src/ninja -isystem=/usr/local/cuda/include
 
-CUDA_FLAGS = -O3 -DNDEBUG --generate-code=arch=compute_75,code=[compute_75,sm_75] --generate-code=arch=compute_80,code=[compute_80,sm_80] --generate-code=arch=compute_86,code=[compute_86,sm_86] --generate-code=arch=compute_90,code=[compute_90,sm_90] -Xcompiler=-fPIC -std=c++17
+CUDA_FLAGS = -O3 -DNDEBUG --generate-code=arch=compute_61,code=[compute_61,sm_61] --generate-code=arch=compute_75,code=[compute_75,sm_75] --generate-code=arch=compute_80,code=[compute_80,sm_80] --generate-code=arch=compute_86,code=[compute_86,sm_86] --generate-code=arch=compute_90,code=[compute_90,sm_90] -Xcompiler=-fPIC -std=c++17
 
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_DATE_TIME_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DHAVE_GMTED -DNINJAFOAM -DNINJA_CUDA_ENABLED -DNOMADS_ENABLE_ASYNC -DPHONE_HOME_QUERIES_ENABLED -DWITH_LCP_CLIENT -DWITH_NOMADS_SUPPORT -Dninja_EXPORTS
 
